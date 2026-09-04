@@ -95,17 +95,17 @@ export default function About() {
       </div>
 
       <Reveal delay={0.15} className="mt-16">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-4">
           {stats.map((stat) => (
             <motion.div
               key={stat.label}
               whileHover={{ y: -4 }}
-              className="glass rounded-2xl p-6"
+              className="glass rounded-2xl p-4 sm:p-6"
             >
-              <p className="font-display text-3xl font-medium text-gradient sm:text-4xl">
+              <p className="font-display text-2xl font-medium text-gradient sm:text-3xl lg:text-4xl">
                 {stat.value}
               </p>
-              <p className="mt-2 text-sm text-muted">{stat.label}</p>
+              <p className="mt-2 text-xs text-muted sm:text-sm">{stat.label}</p>
             </motion.div>
           ))}
         </div>

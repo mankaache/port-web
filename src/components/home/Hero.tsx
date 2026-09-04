@@ -1,7 +1,7 @@
 import { Suspense, lazy, useState } from 'react'
 import type { MouseEvent } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { ArrowDown, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import MagneticButton from '@/components/ui/MagneticButton'
 import heroPortrait from '@/assets/mankaa-hero.webp'
 
@@ -165,18 +165,6 @@ export default function Hero() {
 
         <HeroPortrait />
       </div>
-
-      {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-        className="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-dim sm:flex [@media(max-height:640px)]:hidden!"
-      >
-        <span className="tracking-[0.2em]">SCROLL</span>
-        <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 1.8, repeat: Infinity }}>
-          <ArrowDown size={14} />
-        </motion.div>
-      </motion.div> */}
     </section>
   )
 }
