@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Anyone can read projects (the public site needs this).
+    // Only a signed-in user (you, via /dash) can create, edit, or delete.
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
