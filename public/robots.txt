@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /dash
 
-Sitemap: https://web-portfolio-310eb.web.app/sitemap.xml
+Sitemap: wmankaache.vercel.app
